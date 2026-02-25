@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Ola Data Analytics")
 # --- STEP 1: LOAD & CLEAN DATA (existing logic) ---
 @st.cache_data  # This makes the app fast by saving data in memory
 def load_data():
-    file_path = "OLA_Cleaned.xlsx" # Ensure this is in the same folder
+    file_path = "OLA_RIDE_PROJECT/OLA_Cleaned.xlsx" # Ensure this is in the same folder
     df = pd.read_excel(file_path, sheet_name="July")
     df['Date'] = pd.to_datetime(df['Date'])
     df['Hour'] = df['Date'].dt.hour
@@ -145,3 +145,4 @@ elif page == "Power BI Dashboard":
     with tab5:
         st.subheader("Driver & Customer Ratings")
         st.image("rating.png", use_container_width=True)
+
