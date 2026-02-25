@@ -128,21 +128,22 @@ elif page == "Power BI Dashboard":
 
     with tab1:
         st.subheader("Overall Ride Analysis")
-        st.image("overall.png", use_container_width=True)
+        st.image("OLA_RIDE_PROJECT/overall.png", use_container_width=True)
 
     with tab2:
         st.subheader("Vehicle Performance")
-        st.image("vehicle.png", use_container_width=True)
+        st.image("OLA_RIDE_PROJECT/vehicle.png", use_container_width=True)
 
     with tab3:
         st.subheader("Revenue & Value Insights")
-        st.image("revenue.png", use_container_width=True)
+        st.image("OLA_RIDE_PROJECT/revenue.png", use_container_width=True)
 
     with tab4:
         st.subheader("Cancellation Analysis")
-        st.image("cancellation.png", use_container_width=True)
+        st.image("OLA_RIDE_PROJECT/cancellation.png", use_container_width=True)
 
     with tab5:
         st.subheader("Driver & Customer Ratings")
-        st.image("rating.png", use_container_width=True)
+        st.image("OLA_RIDE_PROJECT/rating.png", use_container_width=True)
+
 
